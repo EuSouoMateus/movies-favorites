@@ -25,6 +25,7 @@ class IMDbThreadWorker(Thread):
     def get_movie(self, name):
         """
         Get information of each movie using the imdb api.
+        @param name: movie name.
         @return: movie data information
         """
         imdb_api = IMDb()
@@ -53,7 +54,7 @@ class MoviesFavorites(object):
     MoviesFavorites class
     Main class MoviesFavorites to initialize
     __init__:
-    @param filename: list name in text file
+    @param filename: list name in text file.
     @return: MoviesFavorites object
     """
     def __init__(self, filename=""):
@@ -86,6 +87,7 @@ class MoviesFavorites(object):
     def get_runtime_formatted(self, runtime):
         """
         Simple formatted runtime
+        @param runtime: movie runtime
         @return: runtime formatted
         """
         return "{}h {}m".format(int(runtime / 60), int(runtime % 60))
@@ -113,6 +115,7 @@ class MoviesFavorites(object):
     def generate_movies_data(self, movies_queue):
         """
         Create array with movie information.
+        @param movies_queue: Queue with all movies.
         @return: movies information
         """
         data = []
@@ -135,6 +138,7 @@ class MoviesFavorites(object):
     def generate_csv(self, rows):
         """
         Create cvs file.
+        @param rows: Array with all movies data information.
         @return: True
         """
         with open(os.path.join(self.filename.replace(".txt", ".csv")), "w", encoding="utf-8", newline="") as file:
