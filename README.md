@@ -15,5 +15,5 @@ Para usar este projeto, forneça uma lista em texto simples com o nome dos seus 
 > python movies_favorites.py list.txt
 movies: 100%|████████████████████████████████████████| 49/49 [00:09<00:00,  5.12it/s]
 ```
-## Output:
+## Saída:
 [list.csv](https://gist.github.com/MateLopes/440e95c98cba0c25f77e99692b853064)
