@@ -69,7 +69,7 @@ class MoviesFavorites(object):
     def print_help(self):
         """
         Print usage.
-        @return: 0
+        @return: code 0
         """
         print("usage: python movies_favorites.py [list.txt]")
         return 0
