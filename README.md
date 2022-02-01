@@ -1,5 +1,5 @@
 # movies_favorites
-Projeto desenvolvido com Python, Threads e IMDbPY, para gerar uma lista CSV personalizada com informações do imdb a partir de uma lista simples de texto com nome dos seus filmes favoritos.
+Projeto desenvolvido com Python, usando threads, tqdm e IMDbPY para gerar uma lista CSV personalizada com informações do imdb a partir de uma lista simples de texto com nome dos seus filmes favoritos.
 
 ## Instalação:
 
